@@ -67,6 +67,7 @@ class TestSuiteDirective(TestCommonDirective):
             )
 
         cases = suite["tests"]
+        timestamp = suite["timestamp"]
 
         passed = suite["passed"]
         skipped = suite["skips"]
@@ -95,6 +96,7 @@ class TestSuiteDirective(TestCommonDirective):
             skipped=skipped,
             failed=failed,
             errors=errors,
+            timestamp=timestamp,
         )
 
         # TODO double nested logic

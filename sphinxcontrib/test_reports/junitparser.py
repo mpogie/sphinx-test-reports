@@ -106,6 +106,7 @@ class JUnitParser:
                 "skips": skips,
                 "passed": passed,
                 "time": float(testsuite.attrib.get("time", -1)),
+                "timestamp": testsuite.attrib.get("timestamp", "unknown"),
                 "testcases": [],
                 "testsuite_nested": [],
             }
