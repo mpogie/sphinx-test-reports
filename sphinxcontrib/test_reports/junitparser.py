@@ -50,6 +50,7 @@ class JUnitParser:
                 "line": int(testcase.attrib.get("line", -1)),
                 "name": testcase.attrib.get("name", "unknown"),
                 "time": float(testcase.attrib.get("time", -1)),
+                "tags": testcase.attrib.get("tags", "").lower(),
             }
 
             # The following data is normally a subnode (e.g. skipped/failure).
