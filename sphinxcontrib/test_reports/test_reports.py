@@ -122,6 +122,7 @@ def sphinx_needs_update(app, *args):
     add_extra_option(app, "classname")
     add_extra_option(app, "time")
     add_extra_option(app, "timestamp")
+    add_extra_option(app, "validates")
 
     add_extra_option(app, "suites")
     add_extra_option(app, "cases")

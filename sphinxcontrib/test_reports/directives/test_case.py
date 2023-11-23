@@ -178,6 +178,7 @@ class TestCaseDirective(TestCommonDirective):
 #            tags=self.test_tags,
             # Take tags from JUnit Test-Case
             tags=case["tags"],
+            validates=case["reqid"],
             status=self.test_status,
             collapse=self.collapse,
             file=self.test_file_given,

@@ -51,6 +51,7 @@ class JUnitParser:
                 "name": testcase.attrib.get("name", "unknown"),
                 "time": float(testcase.attrib.get("time", -1)),
                 "tags": testcase.attrib.get("tags", "").lower(),
+                "reqid": testcase.attrib.get("reqid", "").upper(),
             }
 
             # The following data is normally a subnode (e.g. skipped/failure).
